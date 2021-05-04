@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context"
+    
+    xsi:schemaLocation="http://www.springframework.org/schema/beans 
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/spring-context-5.2.10.xsd
+    http://www.springframework.org/schema/beans/spring-beans-4.0.xsd" >
+   
+	<context:componet-scan  base-package="demo.com.springbasics1"></context:componet-scan> 
+	<!-- after this we have mention a @Componet annotation on a class then we can directly call method getBean("car")
+	
+	 -->
+     <!--     <bean id="vehicle" class="demo.com.springbasic1.Car"> </bean>  //this is xml based configuration -->
+     <bean id="tyre" class="demo.com.springbasic1.Tyre">
+     	 <property name="brand" value="MRF"></property> 
+     
+     </bean>
+        
+ </beans>       
